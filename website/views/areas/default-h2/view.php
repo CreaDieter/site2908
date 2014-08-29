@@ -1,0 +1,1 @@
+<h1><?= $this->input('area-h2'); ?></h1>

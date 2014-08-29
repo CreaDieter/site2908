@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+    <id>default-youtube</id>
+    <name>Youtube video</name>
+    <description>Add a Youtube video to the document</description>
+    <icon>/website/static/images/icon/youtube.png</icon>
+    <version>1.0</version>
+</zend-config>

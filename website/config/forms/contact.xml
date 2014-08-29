@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<name>contact</name>
+	<method>post</method>
+	<elements>
+		<name>
+			<type>text</type>
+			<options>
+				<label>Naam:</label>
+				<required>1</required>
+			</options>
+		</name>	
+		
+		<email>
+			<type>email</type>
+			<options>
+				<label>E-mailadres:</label>
+				<required>true</required>
+				<validators>
+					<email>
+						<validator>EmailAddress</validator>
+					</email>
+				</validators>					
+			</options>
+		</email>	
+		
+		<phone>
+			<type>text</type>
+			<options>
+				<label>Telefoon:</label>
+			</options>
+		</phone>	
+		
+		<message>
+			<type>textarea</type>
+			<options>
+				<required>true</required>
+				<rows>6</rows>
+				<cols>50</cols>
+				<label>Bericht:</label>
+			</options>
+		</message>
+		<hiddie>
+			<type>hidden</type>
+			<options>
+				<value>incorrect</value>
+				<validators>
+					<identical>
+						<validator>Identical</validator>
+						<options>
+							<token>correctValue</token>
+						</options>
+					</identical>
+				</validators>
+			</options>
+		</hiddie>
+		
+		<submit>
+			<type>submit</type>
+			<options>
+				<type>submit</type>
+				<label>Verzenden</label>
+			</options>
+		</submit>
+		
+	</elements> 
+</form>

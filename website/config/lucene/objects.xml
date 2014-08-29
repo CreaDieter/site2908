@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+
+    <event> <!-- we want to index the Object_Event classes -->
+        <fields>
+            <title/> <!-- Index the title-element, lucene type is text (default) -->
+            <content/> <!-- Index the content-element, lucene type is text (default) -->
+            <subsites> <!-- Index the subsites-element -->
+                <type>unindexed</type> <!-- Lucene type is unindexed -->
+                <values>
+                    <val>%subsiteKey%</val> <!-- It needs to match the 'subsiteKey' variable given in the service -->
+                </values>
+            </subsites>
+        </fields>
+    </event>
+
+    <news> <!-- We want to index the Object_News classes -->
+        <fields>
+            <title> <!-- Index the title-element -->
+                <values>
+                    <value>Mario kart</value> <!-- The title must be "Mario Kart" ... -->
+                    <value>Wii</value> <!-- ... or "Wii" -->
+                </values>
+            </title>
+            <content/> <!-- Index the content-element, lucene type is text (default) -->
+            <subsites> <!-- Index the subsites-element -->
+                <type>unindexed</type> <!-- Lucene type is unindexed -->
+                <values>
+                    <val>extranet</val> <!-- We only want the the news-items from the exranet subsite -->
+                </values>
+            </subsites>
+        </fields>
+    </news>
+
+</objects>

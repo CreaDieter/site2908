@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+    <id>news-detail</id>
+    <name>News detail</name>
+    <description>Display the detail of a news item</description>
+    <icon>/pimcore/static/img/icon/new.png</icon>
+    <version>0.4</version>
+</zend-config>

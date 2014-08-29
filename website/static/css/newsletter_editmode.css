@@ -1,0 +1,30 @@
+div.editmode div.upload {
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+div.editmode div.upload > div {
+    width: 400px;
+    float: left;
+}
+
+div.editmode div.upload > div input {
+    height: 30px;
+    line-height: 30px;
+}
+
+div.editmode div.upload > button {
+    width: 150px;
+    float: left;
+    background: #f1f1f1;
+    color: #666;
+    border: 1px solid #666;
+    height: 33px;
+    line-height: 30px;
+}
+
+div.editmode div.upload > button:hover {
+    background-color: #747474;
+    color: white;;
+    border-color: #747474;
+}

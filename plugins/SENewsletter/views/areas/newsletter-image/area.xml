@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+    <id>newsletter-image</id>
+    <name>Image</name>
+    <description>Add an image to the newsletter</description>
+    <icon>/pimcore/static/img/icon/picture.png</icon>
+    <version>0.3</version>
+</zend-config>

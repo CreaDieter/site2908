@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+		<plugin>
+
+            <!-- the plugin name [A-Za-z_] -->
+            <pluginName>SENewsletter</pluginName>
+
+            <!-- a short description -->
+			<pluginDescription><![CDATA[Studio Emma Newsletter Plugin]]></pluginDescription>
+
+            <pluginNiceName>SE Newsletter Plugin</pluginNiceName>
+
+            <!-- meta data -->
+            <pluginVersion>0.9</pluginVersion>
+            <pluginRevision>1</pluginRevision>
+            <pluginBuildTimestamp>0</pluginBuildTimestamp>
+
+            <!-- put in the URL for the plugin configuration eg. /plugin/SENewsletter/admin/index -->
+            <pluginIframeSrc></pluginIframeSrc>
+
+            <!-- className of the plugin which extends Pimcore_API_Plugin_Abstract-->
+			<pluginClassName>SENewsletter_Plugin</pluginClassName>
+
+            <!-- include paths relative to plugin-directory -->
+			<pluginIncludePaths>
+				<path>/SENewsletter/lib</path>
+				<path>/SENewsletter/views/areas</path>
+			</pluginIncludePaths>
+
+			<!-- namespaces to register with autoloader-->
+			<pluginNamespaces>
+				<namespace>SENewsletter</namespace>
+			</pluginNamespaces>
+
+			<!-- js files with path relative to plugin-directory -->
+			<pluginJsPaths>
+                <path>/plugins/SENewsletter/static/js/startup.js</path>
+                <path>/plugins/SENewsletter/static/js/admin.js</path>
+                <path>/plugins/SENewsletter/static/js/send.js</path>
+			</pluginJsPaths>
+		</plugin>
+</zend-config>
